@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
-    <!-- Compressed CSS -->
+    <title>My Travel App</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
@@ -16,38 +15,68 @@
     <div class="cell grid-x grid-margin-x align-middle header">
       <img src="./Images/logo.jpeg" alt="" class="logo">
       <h1>My Travel App</h1>
-
     </div>
     <div class="cell medium-auto medium-cell-block-container">
       <div class="grid-x grid-padding-x">
         <div class="cell medium-3 large-2medium-cell-block-y">
-          <h2>Independent scrolling sidebar</h2>
-          <iframe
-            width="450"
-            height="250"
-            frameborder="0" style="border:0"
-            referrerpolicy="no-referrer-when-downgrade"
-            src="http://api.openweathermap.org/data/2.5/forecast?lat=33.44&lon=-94.04&appid=5b363f0d85d1d8e70ad27ba598ac067c"allowfullscreen>
-          </iframe>
+          
+          <div class="row">
+            <div class="columns">
+              <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                <ul class="orbit-container">
+                  <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                  <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                  <li class="is-active orbit-slide">
+                    <img class="orbit-image" src="//foundation.zurb.com/sites/docs/assets/img/orbit/01.jpg" alt="Space">
+                    <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
+                  </li>
+                  <li class="orbit-slide">
+                    <img class="orbit-image" src="//foundation.zurb.com/sites/docs/assets/img/orbit/02.jpg" alt="Space">
+                    <figcaption class="orbit-caption">Lets Rocket!</figcaption>
+                  </li>
+                  <li class="orbit-slide">
+                    <img class="orbit-image" src="//foundation.zurb.com/sites/docs/assets/img/orbit/03.jpg" alt="Space">
+                    <figcaption class="orbit-caption">Encapsulating</figcaption>
+                  </li>
+                  <li class="orbit-slide">
+                    <img class="orbit-image" src="//foundation.zurb.com/sites/docs/assets/img/orbit/04.jpg" alt="Space">
+                    <figcaption class="orbit-caption">Outta This World</figcaption>
+                  </li>
+                </ul>
+                <nav class="orbit-bullets">
+                  <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                  <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                  <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                  <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+                </nav>
+              </div>
+            </div>
+          </div>
+          
+          <div class="input">
+            <input type="search" class="loc">
+            <input type="submit" value="submit">
+          </div>
+
+          
           <ul class="vertical menu">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
+            <li>day1</li>
+            <li>day2</li>
+            <li>day3</li>
+            <li>day4</li>
+            <li>day5</li>
           </ul>
         </div>
         <div class="cell medium-9 medium-cell-block-y">
-          <h2>Independent scrolling body</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacus odio, accumsan id ullamcorper eget, varius nec erat. Nulla facilisi. Donec dui felis, euismod nec finibus vitae, dapibus quis arcu. Maecenas tempor et ipsum quis venenatis. Ut posuere sed augue sit amet efficitur. Sed imperdiet, justo id tempus rhoncus, est est viverra turpis, non vulputate magna lectus et nisl. Pellentesque ultrices porttitor vehicula. Ut aliquet efficitur ligula, a consectetur felis. Proin tristique ut augue nec luctus. Curabitur a sapien pretium, auctor elit a, efficitur erat. Donec tincidunt dui vel velit bibendum euismod. Cras vitae nibh dui. Aliquam erat volutpat. Etiam sit amet arcu a erat efficitur facilisis. Ut viverra dapibus turpis, et ornare justo. Integer in dui cursus, dignissim tortor a, hendrerit risus.</p>
-          <p>Suspendisse pulvinar, massa iaculis feugiat lobortis, dolor sapien vestibulum nulla, vel cursus tellus leo in lorem. Aliquam eu placerat urna. Suspendisse sed viverra orci, ut mattis neque. Fusce non ultrices nisi. In sagittis varius mollis. Quisque dolor quam, consectetur eu lacinia ac, ullamcorper vel arcu. Nullam mattis imperdiet nulla sed ornare. Praesent tristique, est id eleifend vestibulum, neque nibh condimentum ex, nec lobortis purus justo a libero. Phasellus id ex ac nunc hendrerit hendrerit. Nullam urna ipsum, rutrum at fringilla vel, venenatis non purus. Maecenas egestas ex vitae venenatis molestie. Ut et odio egestas, accumsan neque et, viverra nisl. Sed faucibus nec nulla sed imperdiet. Fusce quis sem ac urna semper tempor a id elit. Nulla fringilla vitae sapien a vehicula.</p>
-          <p>Nullam vestibulum lorem nec lectus egestas, nec ullamcorper diam maximus. Maecenas condimentum, nibh at blandit semper, ex erat tempus magna, id maximus neque velit accumsan nibh. Aenean dignissim lorem eu nisl laoreet vestibulum. Vivamus efficitur et augue vitae tincidunt. Etiam et magna felis. Integer mattis, nisi aliquet scelerisque blandit, ex mi sodales ante, eget accumsan quam magna et ligula. Curabitur id tristique leo. Proin rutrum mi vitae enim rhoncus, at cursus neque eleifend. Integer ultrices volutpat tellus ac porta. Fusce sollicitudin venenatis lacinia. Fusce ante lorem, gravida semper varius non, pharetra non erat. Sed dapibus arcu turpis, ac sollicitudin nibh lacinia vel. Nullam at enim porta, luctus metus sit amet, rutrum odio. Cras tempor enim vel pellentesque sollicitudin. Maecenas ullamcorper, sem non accumsan volutpat, neque tortor pulvinar orci, ut ultrices ligula lorem ut risus.</p>
-          <p>Aliquam facilisis, nibh eget posuere suscipit, arcu sapien iaculis odio, in molestie dolor lectus vitae sem. Cras id nunc mollis mi rutrum dapibus. Quisque rutrum a augue at scelerisque. Praesent faucibus ac enim vitae gravida. Sed et sodales elit. Duis magna lectus, interdum sit amet metus a, sagittis varius magna. Proin nibh lectus, egestas a luctus ut, dapibus et enim. Curabitur fringilla ipsum vitae nunc imperdiet consectetur eget non neque. Suspendisse ultricies odio quis lorem vulputate, ac vulputate turpis feugiat. Maecenas posuere rhoncus orci, in ornare velit suscipit tempor. Curabitur pretium nisl id lorem placerat consequat. In quis quam eros. Nam mattis elit eu quam sagittis, in varius erat tempor.</p>
-          <p>Fusce felis magna, pellentesque eget mollis a, rutrum id eros. Curabitur auctor varius arcu a consequat. Phasellus quis pulvinar enim, eu ultricies justo. Pellentesque risus libero, dapibus at erat ultricies, gravida varius erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla tempus, justo ut laoreet mollis, nunc tellus convallis urna, vel pretium dui velit eget ligula. Aliquam semper sed nulla a molestie. Maecenas at egestas massa, vitae aliquam mi. Fusce nec sem egestas, pretium lacus non, tincidunt sapien. Sed tristique odio at ultricies vulputate. Integer et convallis augue, eu aliquam enim. Mauris ut faucibus diam. Donec vulputate nunc sed congue accumsan. Etiam lobortis nisi quis lacinia pharetra.</p>
+          <h2>Activities & Dining Options</h2>
+
+
+
+
+
+
         </div>
       </div>
-    </div>
-    <div class="cell shrink footer">
-      <h3>Here's my footer</h3>
     </div>
   </div>
   
